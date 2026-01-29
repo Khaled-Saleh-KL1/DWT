@@ -1,7 +1,11 @@
-from pydantic_settings import BaseSettings
+from pydantic import BaseModel
 
-class Question(BaseSettings):
-    pass
+# Endpoint 1
+class InputData(BaseModel):
+    content: str
 
-class Answer(BaseSettings):
-    pass
+class QuestionRequest(BaseModel):
+    question: str
+
+class AnswerResponse(BaseModel):
+    answer: str
