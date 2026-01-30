@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    # ADDED: This section gives access to the GPU because loading models
+    # on the container using the CPU will take too much time
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    command: fastapi dev main.py --host 0.0.0.0 --port 8000
