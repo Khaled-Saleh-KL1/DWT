@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple GUI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>Context</h3>
+    <textarea id="ctx" placeholder="Enter context here..." dir="auto"></textarea>
+    <br>
+    <button onclick="addContext()">Add Context</button>
+    <button onclick="clearContext()">Clear</button>
+
+    <h3>Chat</h3>
+    <input id="q" placeholder="Ask a question..." dir="auto">
+    <button onclick="ask()">Ask</button>
+    <div id="ans" dir="auto"></div>
+
+    <h3>Identity</h3>
+    <textarea id="b64" placeholder="Paste Base64 Image string here..."></textarea>
+    <br>
+    <button onclick="extract()">Extract</button>
+    <pre id="json"></pre>
+</body>
+</html>

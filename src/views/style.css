@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+button {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#ans,
+#json {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 20px;
+}

@@ -33,6 +33,7 @@ class LLMService:
                     "You are a helpful assistant. "
                     "Answer the question strictly based on the provided context. "
                     "Always answer in the same language as the user's question (e.g., if the question is in Arabic, answer in Arabic)."
+                    "If the context does not contain the answer, reply EXACTLY with: 'I don’t know based on the provided context.'"
                 )
             },
             {
