@@ -10,8 +10,10 @@ from fastapi import FastAPI
 # files import
 from routes import base
 from routes import qa_route
+from routes import identity_route
 
 app = FastAPI()
 
 app.include_router(base.base_router)
 app.include_router(qa_route.qa_router)
+app.include_router(identity_route.identity_router)

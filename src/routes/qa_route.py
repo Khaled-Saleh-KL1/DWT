@@ -2,14 +2,14 @@
 from fastapi import APIRouter
 
 # files import
-from stores import QAStore, LLMService
+from stores import QAStore, llm_service
 from models import InputData, QuestionRequest, AnswerResponse
 
 
 qa_router = APIRouter()
 
 qa_store = QAStore()
-llm_service = LLMService()
+# llm_service is imported from stores
 
 @qa_router.post("/add-data")
 def add_data(request: InputData):

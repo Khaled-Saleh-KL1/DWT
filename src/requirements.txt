@@ -1,4 +1,5 @@
-fastapi[standard] == 0.128.0
+fastapi[standard]==0.128.0
 torch==2.10.0
 transformers==5.0.0
 accelerate==1.12.0
+easyocr==1.7.2
