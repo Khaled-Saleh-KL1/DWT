@@ -17,6 +17,7 @@ class LLMService:
                 torch_dtype = "auto",
                 device_map = "auto" # Where the model layers are placed
             )
+            print(torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
         except Exception as e:
             print(f"Error loading model: {e}")
             self.model = None
