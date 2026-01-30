@@ -47,4 +47,4 @@ docker-compose up --build
 
 # How to use
 Once the terminal says that the application is running, open your web browser and go to:
-`http://localhost:8000` and enjoy :)
+`http://localhost:8000/GUI` and enjoy :)
