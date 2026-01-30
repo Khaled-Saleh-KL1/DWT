@@ -4,7 +4,7 @@ import base64
 class OCRService:
     def __init__(self):
         print("-"*20, "\nLoading EasyOCR model...")
-        self.reader = easyocr.Reader(['ar', 'en'], gpu=True)
+        self.reader = easyocr.Reader(['ar', 'en'], gpu=False)
         print("EasyOCR Loaded Successfully\n", "-"*20)
     
     def extract_text(self, base64_string: str) -> str:
