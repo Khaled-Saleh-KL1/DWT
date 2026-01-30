@@ -7,8 +7,8 @@ from models import LLMEnum
 
 class LLMService:
     def __init__(self):
-        print("-"*20, "\nLoading Qwen 2.5 3B Instruct model...")
-        self.model_name = "Qwen/Qwen2.5-3B-Instruct"
+        print("-"*20, "\nLoading Qwen 2.5 1.5B Instruct model...")
+        self.model_name = "Qwen/Qwen2.5-1.5B-Instruct"
 
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
@@ -21,7 +21,7 @@ class LLMService:
             print(f"Error loading model: {e}")
             self.model = None
         print(f"Device used: {self.model.device} (CUDA available: {torch.cuda.is_available()})")
-        print("Qwen 2.5 3B Loaded Successfully\n","-"*20)
+        print("Qwen 2.5 Loaded Successfully\n","-"*20)
 
     def generate_answer(self, question: str, context: str) -> str:
         if not self.model:
