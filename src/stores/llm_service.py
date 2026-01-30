@@ -17,10 +17,10 @@ class LLMService:
                 torch_dtype = "auto",
                 device_map = "auto" # Where the model layers are placed
             )
-            print(torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
         except Exception as e:
             print(f"Error loading model: {e}")
             self.model = None
+        print(f"Device used: {self.model.device} (CUDA available: {torch.cuda.is_available()})")
         print("Qwen 2.5 3B Loaded Successfully\n","-"*20)
 
     def generate_answer(self, question: str, context: str) -> str:
