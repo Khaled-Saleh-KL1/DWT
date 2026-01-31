@@ -37,7 +37,7 @@ cd DWT
 ```
 
 2. Configure Environment
-Create a file named `.env` inside the src folder. Add you Hugging Face token and the app details.
+Create a file named `.env` inside the src folder. Add your Hugging Face token and the app details.
 
 3. Run with Docker
 ```bash
