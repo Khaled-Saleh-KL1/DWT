@@ -3,6 +3,7 @@
 DWT is a simple AI tool that helps you process documents. It has two main features: 
 1. Extracting information from ID cards. (EasyOCR 25M)
 2. Chatting with text. (Qwen 2.5 3B)
+
 local AI model to ensure your data stays private and secure.
 
 # Features
