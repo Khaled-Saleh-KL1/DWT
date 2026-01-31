@@ -7,6 +7,9 @@ DWT is a simple AI tool that helps you process documents. It has two main featur
 local AI models to ensure your data stays private and secure.
 
 # Features
+
+![alt text](image.png)
+
 - Chat with Data: Past any text into the `Context` box, and then ask the Ai questions about it.
 - Identity Extraction: Upload the base64 of a picture of an ID card (Arabic or English). The system will return the text into JSON format.
 - Local AI: Runs locally on your machine using Docker. So make sure docker is already installed.
